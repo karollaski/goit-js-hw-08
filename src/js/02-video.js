@@ -5,7 +5,7 @@ const STORAGE_TIME = 'videoplayer-current-time';
 const iframe = document.querySelector('#vimeo-player');
 const player = new Player(iframe);
 
-const onPlay = function (event) {
+const onPlay = event => {
   localStorage.setItem(STORAGE_TIME, event.seconds);
 };
 
